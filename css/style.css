@@ -1,5 +1,7 @@
 body{
     background-color:ghostwhite;
+    font-family: 'Open Sans', sans-serif;
+    position:absolute;
 }
 
 .inicio{
@@ -73,7 +75,6 @@ img{
     margin-left: 100px;
     width: 720px;
     height: 410px;
-    
 
 }
 
@@ -82,83 +83,86 @@ img{
     height: 100%;
 }
 
+
 .cajavideo2{
-    float: right;
-    margin-top: -380px;
-    margin-right: 80px;
-    width: 380px;
-    height: 100%;
-    
-}
-
-.video{
-    display: flex;
-
-}
-
-.video img{
-    width: 180px;
+    position: relative;
+    border: 1px solid orange;
+    width: 320px;
     height: 110px;
-    margin-top: 5px;
+    margin-top:10px
     
 }
 
-.cajavideo2 p{
-    align-items: flex-start;
+.cajavideo2 img{
+    width: 50%;
+    height: 100%;
 }
 
-.titulo{
+.cajaTexto{
+    position: relative;
+    border: 1px black;
+    font-size: 10px;
+    margin-left: 180px;
+    margin-top:-115px;
+    
+    width: 170px;
+    height: 110px;
+    
+}
+
+.cajaTexto .titulo{
+    font-size: 13px;
     font-weight: bold;
-    font-size: 15px;
+} 
+
+.cajatodo{
+    width: 350px;
+    margin-left: 920px;
+    margin-top: -390px;
 }
 
+
+
+
+
+
+
+.comentariosTodo{
+    position: relative;
+    width: 800px;
+    margin-left: 98px;
+    margin-top: -1430px;
+}
 
 .titulovideo{
-    margin-left: 100px;
     width: 720px;
     height: 80px;
     border-bottom: 1px solid grey;
-    
-}
-
-.titulovideo p{
     font-size: 20px;
-    margin-top: 10px;
     font-weight: bold;
 }
 
+
+
+
 .titulocanal{
-    margin-left: 100px;
-    width: 720px;
+    
     height: 150px;
+    margin-top: 40px;
     border-bottom: 1px solid grey;
 
 }
 
-
 .agregarcomentario{
-    margin-left: 100px;
     width: 720px;
     height: 80px;
     border-bottom: 1px solid grey;
 }
 
-.comentarios{
-    width: 720px;
-    margin-left: 100px;
 
-}
 
-.comentarioagregado{
-   
-    width: 100%;
-    height: 100px;
-   
-    
-}
 
 .comentarioagregado p{
     font-size: 18px;
-    width: 100%;
-    height: 100%;
+    
 }
