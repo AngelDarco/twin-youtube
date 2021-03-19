@@ -6,6 +6,10 @@
     background-color:beige;
 }
 
+.fa{
+    color:rgb(102, 101, 101);
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -15,19 +19,24 @@
 .inicio{
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
- .inicio img{
-    width: 25px;
-    height: 25px;
+ .inicio .fa{
+    font-size: 20px;
 }
 
 .inicio .logo__youtube{
     display: flex;
     flex: 1 1 auto;
+    font-weight: bold;
+    letter-spacing: -.5px;
     margin: 10px 0 10px 50px;
 }
+.inicio .logo__youtube .fa{
+    color: red;
+}
+
 
 .inicio .buscador{
     flex: 2 1 auto;
@@ -39,11 +48,23 @@
         width: 100%;  
         height: 30px; 
         margin: 10px 0; 
+        font-size: 16px;
+        padding-left: 10px;
+        border-style: none;
+        border: 1px solid rgba(128, 128, 128, 0.356);
     }
-    .inicio .buscador .lupa{
-        width: 70px;
-        border-bottom-style: none;
-        margin-right: 10px;
+    .inicio .buscador button{
+        height: 30px;
+        border-style: none;
+        border: 1px solid rgba(128, 128, 128, 0.356);
+    }
+    .inicio .buscador .fa{
+        width: 60px;
+        height: auto;
+        padding: 3px 0;
+    }
+    .inicio .buscador .fa-microphone{
+        margin-left: 20px;
     }
 
 
@@ -55,14 +76,15 @@
 
 }
 
-.inicio .iconos__derecha img{
+.inicio .iconos__derecha .fa{
     margin-right: 25px;
 }
 
 .inicio .iconos__derecha #me{
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 50px;
+    margin-right: 20px;
 }
 
 
@@ -97,9 +119,7 @@
     
     /*---------Caja Comentarios-------*/
 
-    .cuerpo .caja__principal .comentarios{
-
-    }    
+      
 
     .cuerpo .caja__principal .comentarios .titulo__video{
         width: 100%;
@@ -117,9 +137,13 @@
         width:100%;
         height: 40px;
         display: flex;
-        justify-content:space-between;
-        
+        color: grey;
+        justify-content:space-between;        
         border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    }
+    .cuerpo .caja__principal .comentarios .reproducciones .fa{
+        font-size: 23px;
+        color: grey;
     }
     .cuerpo .caja__principal .comentarios .numero{
         flex: 1 1 auto;
@@ -129,15 +153,22 @@
         display: flex;
         justify-content:space-between
     }
+    .cuerpo .caja__principal .comentarios .likes2{
+        display: flex;        
+    }
+    .cuerpo .caja__principal .comentarios .likes2, .likes p{
+        padding: 0 8px;
+    }
+    .cuerpo .caja__principal .comentarios .likes2 .puntos{
+        font-size: 30px;
+        font-weight: bold;
+    }
     .cuerpo .caja__principal .comentarios .likes .subrayado{
         width: 150px;
         display: flex;
         justify-content: space-between;
         border-bottom: 2px solid grey;
     }
-    
-
-
 
     .cuerpo .caja__principal .comentarios .titulo__canal{
         width: 100%;
@@ -162,16 +193,17 @@
         flex-flow: row;
     }
     .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo p{
-        background-color:aliceblue;
+        background-color:rgba(128, 128, 128, 0.103);
         width:100%;
         height: 40px;
         padding: 15px;
         display: flex;
         align-items: center;
     }
-    .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo img{
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo .fa{
         width: 40px;
         height: 40px;
+        font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -262,7 +294,8 @@
         font-size: 15px;
         color: blue;        
     }
-    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .ver__mas p{
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .ver__mas i{
+        color: blue;
         padding: 0 15px;
     }
 
@@ -273,6 +306,9 @@
     .cuerpo .caja__secundaria{
         flex: 1 1 ;
     }
+    .cuerpo .caja__secundaria p{
+        color: rgb(100, 94, 94);
+    }
 
     .cuerpo .caja__secundaria .video__secundario{
         display: flex;
@@ -282,8 +318,9 @@
     }
 
     .cuerpo .caja__secundaria .video__secundario .cajavideo{
-        width: 150px;
-        padding-bottom: 8px;
+        width: 230px;
+        height: 100px;
+        
     }
 
     .cuerpo .caja__secundaria .video__secundario .cajavideo img{

@@ -7,39 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/javascript.js"></script>
 
+    <link rel="icon" href="/img/icono.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
 
 </head>
 <body>
 
-    
-
         <header class="header">
             <div class="inicio">
                 <div class="logo__youtube">
-                    <img class="imgyoutube" src="img/youtube-logo.png">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     <p class="pyoutube">YouTube</p>
                 </div>
                 <div class="buscador">
-                    <input class="buscador__input" type="text" >
-                            <button class="lupa"><img src="img/lupa.png" alt=""></button>
-                <img src="img/microfono.png" id="microfono" >
-                </div>
+                    <input class="buscador__input" type="text" placeholder="Buscar">
+                            <button class="lupa"><i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                        </div>
                 <div class="iconos__derecha">
-                    <img src="img/camara-de-video.png" id="camara">
-                    <img src="img/parrilla.png" id="parrilla">
-                    <img src="img/campana-de-notificacion.png" id="campana">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    <i class="fa fa-th" aria-hidden="true"></i>
+                    <i class="fa fa-bell" aria-hidden="true"></i>
                     <img src="img/me.jpg" id="me">
                 </div>
             </div>
         </header>
-
-
-
 
     <div class="cuerpo">    
 
@@ -62,12 +58,19 @@
                 </div>
                 <div class="likes">
                     <div class="subrayado">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                         <p>256.694</p>
+                        <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                         <p>6079</p>
                     </div>
-                    <p>COMPARTIR</p>
-                    <p>GUARDAR</p>
-                    <p> ... </p>
+                    
+                    <div class="likes2">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                        <p>COMPARTIR</p>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <p>GUARDAR</p>
+                        <p class="puntos"> ... </p>
+                    </div>
 
                 </div>
             </div>
@@ -88,7 +91,7 @@
                     </div>
                     <div class="segundo">
                         <p>Subscrito</p>
-                        <img class="img2" src="/img/campana-de-notificacion.png" alt="">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
                     </div>
 
                 </div>
