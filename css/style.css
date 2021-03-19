@@ -1,14 +1,305 @@
 *{
-    background-color: grey;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    background-color:beige;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color:#fff;    
 }
 
 .inicio{
-   
-    
- 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
+ .inicio img{
+    width: 25px;
+    height: 25px;
+}
+
+.inicio .logo__youtube{
+    display: flex;
+    flex: 1 1 auto;
+    margin: 10px 0 10px 50px;
+}
+
+.inicio .buscador{
+    flex: 2 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+    .inicio .buscador .buscador__input{
+        width: 100%;  
+        height: 30px; 
+        margin: 10px 0; 
+    }
+    .inicio .buscador .lupa{
+        width: 70px;
+        border-bottom-style: none;
+        margin-right: 10px;
+    }
+
+
+.inicio .iconos__derecha{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+.inicio .iconos__derecha img{
+    margin-right: 25px;
+}
+
+.inicio .iconos__derecha #me{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+
+
+/* ------- CUERPO  -----  */
+
+.cuerpo{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top:30px;    
+    
+}
+
+    .cuerpo .caja__principal{
+        padding-right: 30px;
+        flex: 1 1 40%; 
+    }
+    .cuerpo .caja__principal .video__principal{
+       width: 100%;
+       height: 480px;
+    }
+    .cuerpo .caja__principal .video__principal .imgvideo{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    
+    
+    
+    /*---------Caja Comentarios-------*/
+
+    .cuerpo .caja__principal .comentarios{
+
+    }    
+
+    .cuerpo .caja__principal .comentarios .titulo__video{
+        width: 100%;
+        height: 50px;
+    }    
+
+    .cuerpo .caja__principal .comentarios .titulo__video p{
+        font-size:21px;
+        margin:10px 0;
+    }
+
+
+
+    .cuerpo .caja__principal .comentarios .reproducciones{
+        width:100%;
+        height: 40px;
+        display: flex;
+        justify-content:space-between;
+        
+        border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    }
+    .cuerpo .caja__principal .comentarios .numero{
+        flex: 1 1 auto;
+    }
+    .cuerpo .caja__principal .comentarios .likes{
+        flex: 1 1 auto;
+        display: flex;
+        justify-content:space-between
+    }
+    .cuerpo .caja__principal .comentarios .likes .subrayado{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid grey;
+    }
+    
+
+
+
+    .cuerpo .caja__principal .comentarios .titulo__canal{
+        width: 100%;
+        height: auto;
+        
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    }    
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .nombre{
+        margin: 0 20px
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .primero{
+        display: flex;
+        flex-flow: row;
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo{
+        display: flex;
+        flex-flow: row;
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo p{
+        background-color:aliceblue;
+        width:100%;
+        height: 40px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .segundo img{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .img1{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .foto .img2{
+        padding: 8px;
+    }
+    .cuerpo .caja__principal .comentarios .titulo__canal .nombre .descripcion{
+        margin: 20px 0;
+    }
+
+    .cuerpo .caja__principal .comentarios .numero__comentarios{
+        width: 100%;
+        height: 60px;
+        display: flex;       
+        align-items: center;
+    }    
+    .cuerpo .caja__principal .comentarios .numero__comentarios h3{
+        margin-left: 50px;
+    }
+
+
+
+    .cuerpo .caja__principal .comentarios .comentarios__agregados{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 20px 0;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__foto .foto__perfil{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-right: 20px;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .usuario{
+        display: flex;
+        flex-flow: row;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .usuario .nombre{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .usuario .tiempo{
+        color: gray;
+        margin-top: 2px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .texto__comentado{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .likes__comentario{
+        width: auto;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: gray;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .likes__comentario p, i{
+        padding: 0 5px;
+        font-size: 13px;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .likes__comentario .responder{
+        padding-left: 30px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .likes__comentario .likes__conteo{
+        margin-right: 20px;
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .ver__mas{
+        width: 100%;
+        height:30px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 15px;
+        color: blue;        
+    }
+    .cuerpo .caja__principal .comentarios .comentarios__agregados .comentario__texto .ver__mas p{
+        padding: 0 15px;
+    }
+
+
+
+    /*  Caja Secundaria */
+
+    .cuerpo .caja__secundaria{
+        flex: 1 1 ;
+    }
+
+    .cuerpo .caja__secundaria .video__secundario{
+        display: flex;
+        width: 100%;
+        height: 110px;
+        
+    }
+
+    .cuerpo .caja__secundaria .video__secundario .cajavideo{
+        width: 150px;
+        padding-bottom: 8px;
+    }
+
+    .cuerpo .caja__secundaria .video__secundario .cajavideo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario{
+        padding: 0 7px 5px;
+    }
+
+    .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario h3{
+        font-size:15px;
+    }
+
+    .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario p{
+        font-size:13px;
+        margin-top: 2px;
+    }
