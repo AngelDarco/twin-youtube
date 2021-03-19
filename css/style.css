@@ -9,6 +9,12 @@
 .fa{
     color:rgb(102, 101, 101);
 }
+input:focus {
+    /* Opcion 1 */
+    outline: 0;
+    /* Opcion 2 */
+    outline: none;
+ }
 
 .header {
     position: sticky;
@@ -108,6 +114,7 @@
        width: 100%;
        height: 480px;
     }
+    
     .cuerpo .caja__principal .video__principal .imgvideo{
         width: 100%;
         height: 100%;
@@ -226,13 +233,55 @@
         height: 60px;
         display: flex;       
         align-items: center;
-    }    
-    .cuerpo .caja__principal .comentarios .numero__comentarios h3{
+    }
+    .cuerpo .caja__principal .comentarios .numero__comentarios .fa{
         margin-left: 50px;
     }
+    .cuerpo .caja__principal .comentarios .numero__comentarios h3{
+        margin-left: 10px;
+        font-size: 16px;
+        color: rgba(128, 128, 128);
+    }
+
+    .cuerpo .caja__principal .comentarios .primer__comentario{
+        width: 100%;
+        height: 100%;
+        display: flex; 
+    }
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__foto .foto__perfil{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-right: 20px;
+    }
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto{
+        width: 100%;
+        height: auto;
+    }
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto input{
+        width: 100%;
+        height: 60px; 
+        padding: 20px 0;       
+        border-bottom-style: 3px solid black;
+        border: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.315) ;
+    }
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto input:focus {
+        outline: 0;
+        border-bottom: 2px solid black ;
+   }
 
 
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto .publicar{
+        font-size: 14px;
+    }
 
+    .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto .publicar{
+        margin-bottom: 1px solid;
+        width: 100%;
+        height: 20px;
+
+    }
     .cuerpo .caja__principal .comentarios .comentarios__agregados{
         width: 100%;
         height: auto;
