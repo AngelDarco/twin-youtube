@@ -367,9 +367,8 @@ input:focus {
     }
 
     .cuerpo .caja__secundaria .video__secundario .cajavideo{
-        width: 230px;
-        height: 100px;
-        
+        width: 210px;
+        height: 90px;
     }
 
     .cuerpo .caja__secundaria .video__secundario .cajavideo img{
