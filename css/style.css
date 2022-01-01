@@ -5,7 +5,6 @@
     box-sizing: border-box;
     background-color:beige;
 }
-
 .fa{
     color:rgb(102, 101, 101);
 }
@@ -15,23 +14,19 @@ input:focus {
     /* Opcion 2 */
     outline: none;
  }
-
 .header {
     position: sticky;
     top: 0;
     background-color:#fff;    
 }
-
 .inicio{
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
 }
-
  .inicio .fa{
     font-size: 20px;
 }
-
 .inicio .logo__youtube{
     display: flex;
     flex: 1 1 auto;
@@ -42,8 +37,6 @@ input:focus {
 .inicio .logo__youtube .fa{
     color: red;
 }
-
-
 .inicio .buscador{
     flex: 2 1 auto;
     display: flex;
@@ -72,20 +65,16 @@ input:focus {
     .inicio .buscador .fa-microphone{
         margin-left: 20px;
     }
-
-
 .inicio .iconos__derecha{
     flex: 1 1 auto;
     display: flex;
     justify-content:flex-end;
     align-items: center;
-
 }
 
 .inicio .iconos__derecha .fa{
     margin-right: 25px;
 }
-
 .inicio .iconos__derecha #me{
     width: 38px;
     height: 38px;
@@ -94,18 +83,13 @@ input:focus {
 }
 
 
-
-
 /* ------- CUERPO  -----  */
-
 .cuerpo{
     width: 90%;
     display: flex;
     margin: auto;
     margin-top:30px;    
-    
 }
-
     .cuerpo .caja__principal{
         padding-right: 30px;
         flex: 1 1 40%; 
@@ -119,27 +103,16 @@ input:focus {
         width: 100%;
         height: 100%;
     }
-
-
-    
-    
     
     /*---------Caja Comentarios-------*/
-
-      
-
     .cuerpo .caja__principal .comentarios .titulo__video{
         width: 100%;
         height: 50px;
     }    
-
     .cuerpo .caja__principal .comentarios .titulo__video p{
         font-size:21px;
         margin:10px 0;
     }
-
-
-
     .cuerpo .caja__principal .comentarios .reproducciones{
         width:100%;
         height: 40px;
@@ -176,7 +149,6 @@ input:focus {
         justify-content: space-between;
         border-bottom: 2px solid grey;
     }
-
     .cuerpo .caja__principal .comentarios .titulo__canal{
         width: 100%;
         height: auto;
@@ -219,7 +191,6 @@ input:focus {
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        
     }
     .cuerpo .caja__principal .comentarios .titulo__canal .foto .img2{
         padding: 8px;
@@ -227,7 +198,6 @@ input:focus {
     .cuerpo .caja__principal .comentarios .titulo__canal .nombre .descripcion{
         margin: 20px 0;
     }
-
     .cuerpo .caja__principal .comentarios .numero__comentarios{
         width: 100%;
         height: 60px;
@@ -270,17 +240,13 @@ input:focus {
         outline: 0;
         border-bottom: 2px solid black ;
    }
-
-
     .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto .publicar{
         font-size: 14px;
     }
-
     .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto .publicar{
         margin-bottom: 1px solid;
         width: 100%;
         height: 20px;
-
     }
     .cuerpo .caja__principal .comentarios .comentarios__agregados{
         width: 100%;
@@ -348,42 +314,32 @@ input:focus {
         padding: 0 15px;
     }
 
-
-
     /*  Caja Secundaria */
-
     .cuerpo .caja__secundaria{
         flex: 1 1 ;
     }
     .cuerpo .caja__secundaria p{
         color: rgb(100, 94, 94);
     }
-
     .cuerpo .caja__secundaria .video__secundario{
         display: flex;
         width: 100%;
-        height: 110px;
-        
+        height: 110px;    
     }
-
     .cuerpo .caja__secundaria .video__secundario .cajavideo{
         width: 210px;
         height: 90px;
     }
-
     .cuerpo .caja__secundaria .video__secundario .cajavideo img{
         width: 100%;
         height: 100%;
     }
-
     .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario{
         padding: 0 7px 5px;
     }
-
     .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario h3{
         font-size:15px;
     }
-
     .cuerpo .caja__secundaria .video__secundario .cajaTexto__secundario p{
         font-size:13px;
         margin-top: 2px;
