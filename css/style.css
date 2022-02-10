@@ -29,13 +29,16 @@ input:focus {
 }
 .inicio .logo__youtube{
     display: flex;
+    align-items: center;
     flex: 1 1 auto;
     font-weight: bold;
     letter-spacing: -.5px;
     margin: 10px 0 10px 50px;
+    font-size: 1.2rem;
 }
-.inicio .logo__youtube .fa{
+.inicio .logo__youtube i{
     color: red;
+    font-size: 2rem;
 }
 .inicio .buscador{
     flex: 2 1 auto;
