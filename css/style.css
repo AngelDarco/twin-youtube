@@ -244,7 +244,7 @@ input:focus {
         font-size: 14px;
     }
     .cuerpo .caja__principal .comentarios .primer__comentario .comentario__texto .publicar{
-        margin-bottom: 1px solid;
+        margin-bottom: 1px;
         width: 100%;
         height: 20px;
     }
