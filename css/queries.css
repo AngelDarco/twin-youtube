@@ -1,0 +1,29 @@
+@media (max-width: 650px) {
+  /* header container */
+  .header .header-container {
+    padding: 0 8px;
+  }
+
+  /* search input */
+  .header .header-container .buscador input {
+    display: none;
+  }
+  .header .header-container .buscador button {
+    border: none;
+    width: 40px;
+  }
+  .header .header-container .buscador button:hover {
+    border-radius: 50%;
+  }
+
+  /* microphone */
+  .header .header-container .buscador .microphone {
+    background-color: #fff;
+    margin: 0;
+  }
+
+  /* iconos derecha */
+.header .header-container .iconos__derecha div {
+  margin: 0;
+}
+}
