@@ -1,6 +1,9 @@
 :root{
     --primary-ligth-color: #fff;
-    --secondary-ligth-color: #000;
+    --secondary-ligth-color: #606060;
+
+    --buttons-color: #f2f2f2;
+    --hover-buttons-color: #cecece;
 
     --primary-dark-color: #000;
     --secondary-dark-color: #fff;
