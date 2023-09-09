@@ -2,10 +2,11 @@
 @import url(./queries.css);
 
 /* @import url('https://fonts.cdnfonts.com/css/youtube-sans'); */
-                
+
 @font-face {
   font-family: "Youtube Sans";
-  src: url("../assets/fonts/youtube-sans-cdnfonts/YouTubeSans*.otf") format("otf");
+  src: url("../assets/fonts/youtube-sans-cdnfonts/YouTubeSans*.otf")
+    format("otf");
 }
 
 * {
@@ -180,13 +181,6 @@ input:focus {
   border-radius: 50px;
 }
 
-
-
-
-
-
-
-
 /* ------- CUERPO  -----  */
 .cuerpo {
   width: 100%;
@@ -198,41 +192,41 @@ input:focus {
   grid-auto-flow: column;
 }
 
-.video__principal{
+.video__principal {
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
-    padding-right: 24px;
+  padding-right: 24px;
   height: fit-content;
 }
 
-.caja__secundaria{
+.caja__secundaria {
   width: 100%;
   height: fit-content;
   grid-area: 1 / 2 / -1 / -1;
 }
 
-.comentarios{
+.comentarios {
   grid-area: 2 / 1 / -1 / 2;
   padding-right: 24px;
 }
 
 /* video player */
-.cuerpo .video__principal{
+.cuerpo .video__principal {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.cuerpo .video__principal div{
-position: relative;
-z-index: 10;
+.cuerpo .video__principal div {
+  position: relative;
+  z-index: 10;
 }
 
-.cuerpo .video__principal img{
+.cuerpo .video__principal img {
   max-width: 800px;
 }
-.cuerpo .video__principal .logo-reproduction{
+.cuerpo .video__principal .logo-reproduction {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,9 +251,8 @@ z-index: 10;
   line-height: 2.8;
   font-size: 20px;
   margin: 10px 0;
-  font-family: 'YouTube Sans', sans-serif;
-  font-family: 'YouTube Sans Dark', sans-serif; 
-  
+  font-family: "YouTube Sans", sans-serif;
+  font-family: "YouTube Sans Dark", sans-serif;
 }
 .cuerpo .reproducciones {
   width: 100%;
@@ -300,19 +293,19 @@ z-index: 10;
   border-bottom: 2px solid grey;
 }
 
-
 /* canal and video info */
 .cuerpo .video__principal .canal-info {
   width: 100%;
-  height:  auto;
+  height: auto;
   display: flex;
   margin-bottom: 5rem;
 }
 
- .canal-card, .canal-buttons-card {
+.canal-card,
+.canal-buttons-card {
   width: 100%;
   height: 100%;
-  margin: 12px 12px 12px  0;
+  margin: 12px 12px 12px 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -323,90 +316,92 @@ z-index: 10;
   height: 40px;
   border-radius: 50%;
   margin-right: 12px;
+  cursor: pointer;
 }
-.cuerpo .canal-info .canal-card .canal-name-card{
+.cuerpo .canal-info .canal-card .canal-name-card {
   margin-right: 24px;
 }
-.cuerpo .canal-info .canal-card .canal-name-card h3{
+.cuerpo .canal-info .canal-card .canal-name-card h3 {
   font-size: 16px;
 }
-.cuerpo .canal-info .canal-card .canal-name-card p{
+.cuerpo .canal-info .canal-card .canal-name-card p {
   font-size: 12px;
   color: var(--secondary-ligth-color);
 }
-.cuerpo .canal-info .canal-card .button-container{
+.cuerpo .canal-info .canal-card .button-container {
   display: flex;
   flex: 1;
   justify-content: flex-start;
 }
-.cuerpo .canal-info .canal-card .button-container button{
+.cuerpo .canal-info .canal-card .button-container button {
   border-radius: 24px;
+  cursor: pointer;
   color: var(--primary-ligth-color);
   padding: 8px 12px;
   background-color: var(--primary-dark-color);
 }
 
 /* botones de canal y video acciones */
-.canal-buttons-card div{
+.canal-buttons-card div {
   border-radius: 24px;
-  background-color: var(--buttons-color);  font-size: 16px;
+  background-color: var(--buttons-color);
+  font-size: 16px;
   width: fit-content;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-right: 4px;
+  cursor: pointer;
 }
-.likes-card, .compartir-card, .descargar{
+.likes-card,
+.compartir-card,
+.descargar {
   padding: 0 8px;
 }
 
-.canal-buttons-card .svg{
+.canal-buttons-card .svg {
   width: 26px;
   height: 26px;
 }
 
-.canal-buttons-card .likes-card{
+.canal-buttons-card .likes-card {
   display: flex;
   border-radius: 24px;
   background-color: var(--buttons-color);
 }
 
-.canal-buttons-card .likes-card .like{
+.canal-buttons-card .likes-card .like {
   width: 100%;
   height: min-content;
   white-space: nowrap;
   display: flex;
   align-items: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border-radius: 0;
   border-right: 1px solid var(--hover-buttons-color);
   padding-right: 8px;
   background-color: inherit;
 }
-.canal-buttons-card .likes-card .dislike{
+.canal-buttons-card .likes-card .dislike {
   background-color: inherit;
 }
 
-.canal-buttons-card .opciones-card{
+.canal-buttons-card .opciones-card {
   width: fit-content;
   padding: 0;
   margin: 0;
 }
-.canal-buttons-card .opciones-card .svg{
-margin-left: 4px;
-padding: 0;
+.canal-buttons-card .opciones-card .svg {
+  margin-left: 4px;
+  padding: 0;
 }
 
-.canal-buttons-card .opciones-card svg{
+.canal-buttons-card .opciones-card svg {
   border-radius: inherit;
   background-color: inherit;
 }
-
-
-
-
 
 .cuerpo .numero__comentarios {
   width: 100%;
@@ -423,35 +418,25 @@ padding: 0;
   color: rgba(128, 128, 128);
 }
 
-.cuerpo .comentarios{
+.cuerpo .comentarios {
   border: 1px solid red;
 }
 
-.cuerpo  .comentarios .primer__comentario {
+.cuerpo .comentarios .primer__comentario {
   width: 100%;
   display: flex;
 }
-.cuerpo
-  
-  .comentarios
-  .primer__comentario
-  .comentario__foto
-__perfil {
+.cuerpo .comentarios .primer__comentario .comentario__foto __perfil {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   margin-right: 20px;
 }
-.cuerpo  .comentarios .primer__comentario .comentario__texto {
+.cuerpo .comentarios .primer__comentario .comentario__texto {
   width: 100%;
   height: auto;
 }
-.cuerpo
-  
-  .comentarios
-  .primer__comentario
-  .comentario__texto
-  input {
+.cuerpo .comentarios .primer__comentario .comentario__texto input {
   width: 100%;
   height: 60px;
   padding: 20px 0;
@@ -459,61 +444,35 @@ __perfil {
   border: 0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.315);
 }
-.cuerpo
-  
-  .comentarios
-  .primer__comentario
-  .comentario__texto
-  input:focus {
+.cuerpo .comentarios .primer__comentario .comentario__texto input:focus {
   outline: 0;
   border-bottom: 2px solid black;
 }
-.cuerpo
-  
-  .comentarios
-  .primer__comentario
-  .comentario__texto
-  .publicar {
+.cuerpo .comentarios .primer__comentario .comentario__texto .publicar {
   font-size: 14px;
 }
-.cuerpo
-  
-  .comentarios
-  .primer__comentario
-  .comentario__texto
-  .publicar {
+.cuerpo .comentarios .primer__comentario .comentario__texto .publicar {
   margin-bottom: 1px;
   width: 100%;
   height: 20px;
 }
-.cuerpo  .comentarios .comentarios__agregados {
+.cuerpo .comentarios .comentarios__agregados {
   width: 100%;
   height: auto;
   display: flex;
   padding: 20px 0;
 }
-.cuerpo
-  
-  .comentarios
-  .comentarios__agregados
-  .comentario__foto
-__perfil {
+.cuerpo .comentarios .comentarios__agregados .comentario__foto __perfil {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   margin-right: 20px;
 }
-.cuerpo
-  
-  .comentarios
-  .comentarios__agregados
-  .comentario__texto
-  .usuario {
+.cuerpo .comentarios .comentarios__agregados .comentario__texto .usuario {
   display: flex;
   flex-flow: row;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -523,7 +482,6 @@ __perfil {
   font-size: 15px;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -535,7 +493,6 @@ __perfil {
   font-size: 14px;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -545,7 +502,6 @@ __perfil {
   padding: 10px 0;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -558,7 +514,6 @@ __perfil {
   color: gray;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -569,7 +524,6 @@ i {
   font-size: 13px;
 }
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -581,7 +535,6 @@ i {
 }
 
 .cuerpo
-  
   .comentarios
   .comentarios__agregados
   .comentario__texto
@@ -589,12 +542,7 @@ i {
   .likes__conteo {
   margin-right: 20px;
 }
-.cuerpo
-  
-  .comentarios
-  .comentarios__agregados
-  .comentario__texto
-  .ver__mas {
+.cuerpo .comentarios .comentarios__agregados .comentario__texto .ver__mas {
   width: 100%;
   height: 30px;
   display: flex;
@@ -603,23 +551,89 @@ i {
   font-size: 15px;
   color: blue;
 }
-.cuerpo
-  
-  .comentarios
-  .comentarios__agregados
-  .comentario__texto
-  .ver__mas
-  i {
+.cuerpo .comentarios .comentarios__agregados .comentario__texto .ver__mas i {
   color: blue;
   padding: 0 15px;
 }
 
-/*  Caja Secundaria */
+/*  Caja Secundaria, videos recomendados */
 .cuerpo .caja__secundaria {
   border: 1px solid #09ff00;
   width: 100%;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* carousel recomendados */
+.cuerpo .caja__secundaria .carousel {
+  max-width: 450px;
+  width: fit-content;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row nowrap;
+}
+
+.cuerpo .caja__secundaria .carousel .slider{
+  overflow-x: scroll;
+  margin:  0 8px;
+  padding: 0 12px 0 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.cuerpo .caja__secundaria .carousel .slider::-webkit-scrollbar{
+  display: none;
+}
+
+
+.cuerpo .caja__secundaria .carousel .arrow{
+  padding: 4px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+.cuerpo .caja__secundaria .carousel .arrow:hover{
+  background-color: var(--hover-buttons-color);
+}
+.cuerpo .caja__secundaria .carousel .arrow div{
+  width: 26px;
+  height: 24px;
+  border-radius: inherit;
+  background-color: inherit;
+}
+.cuerpo .caja__secundaria .carousel .right div{
+  transform: rotate(180deg);
+}
+.cuerpo .caja__secundaria .carousel .arrow div svg{
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.cuerpo .caja__secundaria .carousel .slider button{
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 8px 8px 8px 0;
+  padding: 0 12px;
+  height: 32px;
+  border: none;
+  white-space: nowrap;
+  background-color: var(--buttons-color);
+}
+.cuerpo .caja__secundaria .carousel .slider button:hover{
+  background-color: var(--hover-buttons-color);
+}
+
+
+
+
+
+
 .cuerpo .caja__secundaria p {
   color: rgb(100, 94, 94);
 }
