@@ -28,9 +28,15 @@
 
 @media (max-width: 940px) {
   /* container de botones y datos del canal*/
-  /* container de botones y datos del canal*/
   .canal-buttons-card .descargar {
     display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  /* container de botones y datos del canal*/
+  .header-container .buscador {
+    flex: 1;
   }
 }
 
@@ -38,6 +44,10 @@
   /* header container */
   .header .header-container {
     padding: 0 8px;
+  }
+
+  .header .header-container .buscador {
+    flex: none;
   }
 
   /* search input */
@@ -54,13 +64,19 @@
 
   /* microphone */
   .header .header-container .buscador .microphone {
-    background-color: #fff;
+    background-color: inherit;
     margin: 0;
   }
 
   /* iconos derecha */
+  .header .iconos__derecha {
+    flex: none;
+  }
   .header .header-container .iconos__derecha div {
     margin: 0;
+  }
+  .header-container .logo-container {
+    padding: 0;
   }
 
   /* container de botones y datos del canal*/
