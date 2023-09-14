@@ -19,6 +19,9 @@
 
 body {
   min-width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 svg {
@@ -238,6 +241,7 @@ input:focus {
 /* ------- CUERPO  -----  */
 .cuerpo {
   width: 100%;
+  max-width: 1100px;
   min-width: inherit;
   height: fit-content;
   display: grid;
