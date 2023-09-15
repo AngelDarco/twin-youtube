@@ -85,7 +85,9 @@
   }
   .canal-info .canal-buttons-card {
     align-items: center;
-    justify-content: space-around;
+    padding: 0 12px;
+    justify-content: safe center;
+    overflow-x: scroll;
   }
   .canal-buttons-card .descargar {
     display: flex;

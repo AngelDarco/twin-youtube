@@ -323,6 +323,8 @@ input:focus {
   height: auto;
   display: flex;
   align-items: center;
+  padding: 0 8px;
+  overflow: hidden;
 }
 
 .canal-card,
@@ -385,6 +387,9 @@ input:focus {
 }
 .canal-buttons-card .svg {
   margin: 0 4px;
+}
+.canal-buttons-card::-webkit-scrollbar{
+  display: none;
 }
 .likes-card {
   display: flex;
