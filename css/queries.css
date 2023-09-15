@@ -79,6 +79,14 @@
     padding: 0;
   }
 
+  body .cuerpo{
+    padding: 0 8px;
+  }
+
+  .cuerpo .canal-descripcion{
+    margin: 0;
+  }
+
   /* container de botones y datos del canal*/
   .canal-info {
     flex-direction: column;

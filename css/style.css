@@ -18,7 +18,7 @@
 }
 
 body {
-  min-width: 400px;
+  min-width: 390px;
   display: flex;
   align-items: center;
   flex-direction: column;
